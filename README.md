@@ -17,3 +17,4 @@ Stampare le stesse informazioni su DOM sotto forma di stringhe
 1. creare un array di oggetti (membri del team) 
 2. inserire le proprietà di ogni oggetto
 3. for per ciclare i oggetti 
+4. stampo in pagina con template literal

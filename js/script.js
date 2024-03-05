@@ -1,5 +1,5 @@
 
-
+const memberList = document.querySelector('.memberlist')
 const teamMembers = [
   {
     name: 'Wayne Barnett',
@@ -34,5 +34,8 @@ const teamMembers = [
 ]
 
 for(let member of teamMembers){
-  console.log(member);
+  memberList.innerHTML += `
+  <div>
+     <p> ${member.name} ${member.position} ${member.photo}</p>
+   </div>`
 }
