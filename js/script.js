@@ -1,5 +1,6 @@
 
-const memberList = document.querySelector('.memberlist')
+
+const output = document.querySelector('.output')
 const teamMembers = [
   {
     name: 'Wayne Barnett',
@@ -34,22 +35,19 @@ const teamMembers = [
 ]
 
 for(let member of teamMembers){
-  memberList.innerHTML += `
+  output.innerHTML += `
   <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="assets/img/${member.photo}" class="card-img-top" alt="${member.name}">
-          <div class="card-body">
-            <h2 class="card-title">${member.name}</h2>
-            <p class="card-text">${member.position}</p>
-          </div>
-        </div>
+    <div class="card" style="width: 18rem;">
+      <img src="assets/img/${member.photo}" class="card-img-top" alt="${member.name}">
+      <div class="card-body">
+        <h2 class="card-title">${member.name}</h2>
+        <p class="card-text">${member.position}</p>
       </div>
+    </div>
+  </div>
   `
 }
 
 
 
 
-{/* <div>
-     <p> ${member.name} ${member.position} ${member.photo}</p>
-   </div> */}
