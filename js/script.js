@@ -7,7 +7,7 @@ const teamMembers = [
     photo: 'wayne-barnett-founder-ceo.jpg'
   },
   {
-    name: 'Angerla Caroll',
+    name: 'Angela Caroll',
     position: 'Chief Editor',
     photo: 'angela-caroll-chief-editor.jpg'
   },
@@ -35,7 +35,21 @@ const teamMembers = [
 
 for(let member of teamMembers){
   memberList.innerHTML += `
-  <div>
-     <p> ${member.name} ${member.position} ${member.photo}</p>
-   </div>`
+  <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="assets/img/${member.photo}" class="card-img-top" alt="${member.name}">
+          <div class="card-body">
+            <h2 class="card-title">${member.name}</h2>
+            <p class="card-text">${member.position}</p>
+          </div>
+        </div>
+      </div>
+  `
 }
+
+
+
+
+{/* <div>
+     <p> ${member.name} ${member.position} ${member.photo}</p>
+   </div> */}
